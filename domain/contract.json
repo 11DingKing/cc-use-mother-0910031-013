@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "开放日多资源排班",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "活动统筹员",
+    "讲解员",
+    "学校联系人",
+    "场馆管理员"
+  ],
+  "states": [
+    "筹备",
+    "待确认",
+    "已排定",
+    "执行中",
+    "已结算"
+  ],
+  "invariants": [
+    "组合资源约束",
+    "时段缓冲冲突",
+    "原子确认占用",
+    "过期暂占回收"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910031-013-A",
+      "actor": "活动统筹员",
+      "state": "筹备"
+    },
+    {
+      "case_id": "0910031-013-B",
+      "actor": "场馆管理员",
+      "state": "待确认"
+    }
+  ],
+  "tags": [
+    "event-scheduling",
+    "multi-resource"
+  ]
+}
