@@ -1,6 +1,19 @@
 [project]
 name = "domain-contract-0910031-013"
-version = "0.1.0"
-description = "开放日多资源排班的领域约定与校验工具"
+version = "0.2.0"
+description = "开放日多资源排班：领域约定、候选-确认两阶段排班服务与校验工具"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+openday-scheduler = "scheduling.api:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+scheduling = ["py.typed"]
