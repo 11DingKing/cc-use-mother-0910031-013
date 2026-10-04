@@ -4,5 +4,8 @@ __pycache__/
 .venv/
 .env
 *.sqlite3
+*.db
+*.egg-info/
+__editable__/
 dist/
 build/

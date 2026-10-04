@@ -1,6 +1,13 @@
 [project]
 name = "domain-contract-0910031-013"
 version = "0.1.0"
-description = "开放日多资源排班的领域约定与校验工具"
+description = "开放日多资源排班的领域约定、校验工具与排班服务"
 requires-python = ">=3.11"
 dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
